@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .faq-item {
+    @apply border  rounded-lg overflow-hidden mb-4;
+  }
+  
+  .faq-button {
+    @apply w-full flex justify-between items-center px-6 py-4 text-left hover:bg-gray-50;
+  }
+  
+  .faq-question {
+    @apply text-lg font-semibold text-gray-900;
+  }
+  
+  .faq-answer {
+    @apply px-6 py-4 text-gray-600;
+  }
+  
+  .button-primary {
+    @apply bg-[#A6E22E] text-white px-6 py-3 rounded-full hover:bg-opacity-90 
+           transition duration-300 font-semibold text-sm;
+  }
+  
+  .button-secondary {
+    @apply border-2 border-[#A6E22E] text-[#A6E22E] px-6 py-3 rounded-full 
+           hover:bg-[#A6E22E] hover:text-white transition duration-300 font-semibold text-sm;
+  }
+}
