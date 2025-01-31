@@ -36,7 +36,7 @@ const FAQ = () => {
         ))}
       </div>
 
-      <div className="mt-16 text-center">
+      {/* <div className="mt-16 text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-4">
           Your Health Journey Starts Here!
         </h3>
@@ -51,7 +51,7 @@ const FAQ = () => {
             Learn More
           </button>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
