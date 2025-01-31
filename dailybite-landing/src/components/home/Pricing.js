@@ -96,8 +96,8 @@ const PricingCard = ({
 
   return (
     <div 
-      className={`card overflow-hidden transition-all duration-300
-        ${popular ? 'md:-translate-y-4 shadow-xl' : ''}
+      className={`card overflow-hidden transition-all duration-300 
+        ${popular ? 'md:-translate-y-4 shadow-xl' : ''} 
         ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
       style={{ animationDelay: `${delay}ms` }}
     >
@@ -106,14 +106,14 @@ const PricingCard = ({
           <span className="text-white text-sm font-semibold">MOST POPULAR</span>
         </div>
       )}
-      
+
       <div className="p-8">
         <h3 className="text-2xl font-bold text-neutral-800 mb-4">{name}</h3>
         <div className="mb-6">
           <span className="text-4xl font-bold text-primary">{price}</span>
           <span className="text-neutral-600">{period}</span>
         </div>
-        
+
         <ul className="space-y-4 mb-8">
           {features.map(feature => (
             <li key={feature} className="flex items-center">
@@ -122,7 +122,7 @@ const PricingCard = ({
             </li>
           ))}
         </ul>
-        
+
         <button className={`w-full ${buttonStyles[variant]}`}>
           {buttonText}
         </button>
